@@ -5,4 +5,4 @@
  * @author Sanja
  *
  */
-package tests;
+package projectTests;
