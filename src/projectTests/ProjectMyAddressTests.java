@@ -10,7 +10,7 @@ public class ProjectMyAddressTests extends ProjectBaseTests{
 		signIn();
 		myAccountPage.myAddressesClick();
 	}
-	@Test(priorety=0)
+	@Test(priority=0)
 	public void addAddress() throws InterruptedException {
 		myAddressesPage.addNewAddressButtonClick();
 		String address=excelReader.getStringData("MyAddress", 8, 2);

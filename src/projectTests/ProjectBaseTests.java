@@ -49,8 +49,9 @@ public class ProjectBaseTests {
 	}
 
 	public void signIn() {
-		String emailaddress = excelReader.getStringData("SignIn&SignIn", 8, 2);
-		String password = excelReader.getStringData("SignIn&SignIn", 9, 3);
+		String emailaddress = excelReader.getStringData("SignIn&SignOut", 6, 2);
+		System.out.println("Email"+ emailaddress);
+		String password = excelReader.getStringData("SignIn&SignOut", 7, 2);
 		signInPage.insertEmailAddress(emailaddress);
 		signInPage.insertPassword(password);
 		signInPage.signInButtonClick();
